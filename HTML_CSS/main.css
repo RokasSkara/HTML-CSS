@@ -17,6 +17,26 @@ header a{
     color: black;
     padding-right: 1em;
 }
+/*--------------------About-----------------*/
+.about{
+    height: 40vh;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.about img{
+    height: 85%;
+}
+.about h2, .about h1{
+    margin: 0;
+    padding-top: 0.5em;
+}
+.about span{
+    text-decoration: underline;
+    color: rgb(3, 86, 92);
+}
 
 /* Footer styling */
 
@@ -37,3 +57,4 @@ footer{
     font-size: 1.5em;
     color: black;
 }
+
