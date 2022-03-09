@@ -21,11 +21,12 @@ header a{
 }
 /*--------------------About-----------------*/
 .about{
-    height: 40vh;
+    max-height: 50vh;
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgba(107, 106, 106, 0.5);
+    overflow: hidden;
 }
 .aboutInfo{
     display: flex;
@@ -37,6 +38,8 @@ header a{
     flex-direction: column;
     justify-content: space-around;
     width: 50%;
+    max-height: 80%;
+    
 }
 .aboutInfo img{
     height: 30vh;
@@ -55,16 +58,16 @@ header a{
 .about p{
     text-align: justify;
     color:whitesmoke;
+    
 }
 /* Benefits */
 .benefits{
     display: flex;
-    height: 40vh;
+    flex-direction: column;
     background-color: rgba(219, 161, 161, 0.5);
 }
 .benefits div img{
-    max-height: 80%;
-    max-width: 100%;
+    display: none;
 }
 
 .benefitsFlexColumns{
@@ -74,12 +77,28 @@ header a{
     height: 100%;
     justify-content: center;
 }
-.benefitsFlexColumns h3{
+.benefits h2{
     text-align: center;
 }
 .lists{
     display: flex;
     flex-direction: row;
+    width: 100%;
+}
+
+/* --------Main--------*/
+
+.catIntro{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+
+.catIntro img{
+    width: 100%;
+}
+main p{
+    text-align: justify;
 }
 
 /* Footer styling */
