@@ -65,9 +65,14 @@ header a{
     display: flex;
     flex-direction: column;
     background-color: rgba(219, 161, 161, 0.5);
+    padding: 10px;
 }
-.benefits div img{
+
+.listsImg{
     display: none;
+}
+.listsImg img{
+    width: 100%;
 }
 
 .benefitsFlexColumns{
@@ -119,4 +124,36 @@ footer{
     margin-right: 1em;
     font-size: 1.5em;
     color: black;
+}
+.aboutWideScreen{
+    display: none;
+}
+
+@media (min-width: 1000px){
+    .lists div{
+        width: 30%;
+    }
+    .listsImg{
+        width: 100%;
+        display: block;
+        border: 1px solid black;
+    }
+    .lists{
+        justify-content: space-between;
+    }
+    .CatIntroWidescreen{
+        width: 50%;
+    }
+    #Content{
+        display: flex;
+    }
+    header{
+        justify-content: space-between;
+    }
+    .aboutWideScreen{
+        display: block;
+    }
+    .aboutInfo{
+        justify-content: space-between;
+    }
 }
